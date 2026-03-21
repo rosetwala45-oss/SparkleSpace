@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
   line-height: 1.2;
   color: #0E172B;
+  text-transform: capitalize;
 }
 
 p {
@@ -73,6 +74,8 @@ main section {
   width: 100%;
   padding: 50px 10px;
 }
+
+/*----------------------RE-USEABLE COMPONENTS--------------- */
 .cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -102,8 +105,4 @@ main section {
 
 a {
   text-decoration: none;
-}
-
-footer {
-  background-color: #0e172b;
 }
