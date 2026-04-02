@@ -20,7 +20,7 @@ Shade: #9b2226 (brown red)
 
 */
 
-/* GLOBAL STYLING */
+/* ------------------------------------------GLOBAL STYLING---------------------------------------- */
 
 body {
   font-family: "poppins", sans-serif;
@@ -37,6 +37,35 @@ h1, h2, h3, h4, h5 {
 p {
   color: #44556c;
 }
+
+/*------------------------------------------RE-USEABLE COMPONENTS--------------------------------- */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 325px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.index-service-section .card img {
+  width: 100%;
+  height: 300px;
+}
+.card-content {
+  padding: 20px;
+}
+
+/* .home-service-section .btn { 
+ display: block;
+  margin: 0 auto;} */
+
+/* -------HEADER------- */
 
 /* HEADER-HOME */
 
@@ -85,33 +114,6 @@ main section {
   width: 100%;
   padding: 50px 10px;
 }
-
-/*----------------------RE-USEABLE COMPONENTS--------------- */
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
-  width: 325px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.index-service-section .card img {
-  width: 100%;
-  height: 300px;
-}
-.card-content {
-  padding: 20px;
-}
-
-/* .home-service-section .btn { 
- display: block;
-  margin: 0 auto;} */
 
 a {
   text-decoration: none;
