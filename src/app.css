@@ -88,19 +88,28 @@ ul {
 
 .hero {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: #f9fafc;
-  margin: 20px 0px;
-  padding: 60px 10px;
+  margin-top: 3rem;
+  padding: 5rem 2rem;
 }
-header section h1 {
-  font-size: 48px;
-  line-height: 1.1;
+.hero-text-container {
+  width: 90%;
+  text-align: left;
 }
-
-header img {
+.hero-heading {
+  font-weight: 620;
+  font-size: 3rem;
+}
+.hero ul {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.hero img {
   border-radius: 15px;
-  height: 400px;
+  width: 85%;
   box-shadow: 0 4px 6px rgba(0, 0, 0.15, 0.15);
 }
 
@@ -135,6 +144,9 @@ main section {
 }
 
 /* ---FOOTER--- */
+footer {
+  min-width: 600px;
+}
 .footer-header {
   background-color: #0e172b;
   padding: 5rem 10rem;
@@ -153,6 +165,7 @@ main section {
   flex: 1;
 }
 .footer-text {
+  margin-bottom: 2rem;
   color: #cad5e2;
 }
 .footer-content a:hover {
@@ -162,8 +175,18 @@ main section {
 
 /* ---BUTTONS--- */
 .btn {
-  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
   border: 1px solid lightslategray;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: white;
+}
+.btn-primary:hover {
+  color: white;
+  background-color: #0e172b;
 }
 
 /* ---CARDS--- */
