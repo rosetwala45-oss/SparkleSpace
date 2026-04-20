@@ -20,7 +20,14 @@ Shade: #9b2226 (brown red)
 
 */
 
-/* ------------------------------------------GLOBAL STYLING---------------------------------------- */
+/* ------------------GLOBAL STYLING----------------------- */
+
+/* ---Variales--- */
+
+* {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   font-family: "poppins", sans-serif;
@@ -37,37 +44,47 @@ h1, h2, h3, h4, h5 {
 p {
   color: #44556c;
 }
-
-/*------------------------------------------RE-USEABLE COMPONENTS--------------------------------- */
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.card {
-  width: 325px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+ul {
+  list-style: none;
 }
 
-.index-service-section .card img {
+/* ------------------SECTIONS--------------------- */
+
+/* ---NAVBAR--- */
+.navbar {
   width: 100%;
-  height: 300px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 1rem;
 }
-.card-content {
-  padding: 20px;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 4rem;
+}
+.nav-items-container {
+  display: flex;
+  gap: 1rem;
+  color: #637286;
 }
 
-/* .home-service-section .btn { 
- display: block;
-  margin: 0 auto;} */
+.nav-item:hover,
+.nav-item:active {
+  color: #2d494f;
+}
+.navbar-side {
+  display: none;
+}
 
-/* -------HEADER------- */
-
-/* HEADER-HOME */
+/* ---HERO---- */
 
 .hero {
   display: flex;
@@ -80,12 +97,14 @@ header section h1 {
   font-size: 48px;
   line-height: 1.1;
 }
+
 header img {
   border-radius: 15px;
   height: 400px;
   box-shadow: 0 4px 6px rgba(0, 0, 0.15, 0.15);
 }
-/* MAIN-HOME */
+
+/* ----MAIN---- */
 
 main section {
   text-align: center;
@@ -115,6 +134,59 @@ main section {
   padding: 50px 10px;
 }
 
-a {
-  text-decoration: none;
+/* ---FOOTER--- */
+.footer-header {
+  background-color: #0e172b;
+  padding: 5rem 10rem;
+  text-align: center;
 }
+.footer-heading {
+  color: white;
+}
+.footer-container {
+  background-color: #0e172b;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem 2rem;
+}
+.footer-content {
+  flex: 1;
+}
+.footer-text {
+  color: #cad5e2;
+}
+.footer-content a:hover {
+  color: white;
+}
+/*------------------COMPONENTS------------------- */
+
+/* ---BUTTONS--- */
+.btn {
+}
+
+/* ---CARDS--- */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 325px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.index-service-section .card img {
+  width: 100%;
+  height: 300px;
+}
+.card-content {
+  padding: 20px;
+}
+
+/* .home-service-section .btn { 
+ display: block;
+  margin: 0 auto;} */

@@ -12,13 +12,30 @@
   </head>
   <body>
     <header>
-      <h2>SparkleSpace</h2>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="booking.html">Booking</a>
-        <a href="contact.html">Contact</a>
+      <nav class="navbar">
+        <div class="nav-container">
+          <a href="index.html"><h2>SparkleSpace</h2></a>
+          <div class="nav-items-container">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="about.html">About</a>
+            <a class="nav-item" href="services.html">Services</a>
+            <a class="nav-item" href="booking.html">Booking</a>
+            <a class="nav-item" href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div class="navbar-side">
+          <div class="nav-container-side">
+            <a href="index.html"><h2>SparkleSpace</h2></a>
+            <div class="nav-items-container">
+              <a class="nav-item" href="index.html">Home</a>
+              <a class="nav-item" href="about.html">About</a>
+              <a class="nav-item" href="services.html">Services</a>
+              <a class="nav-item" href="booking.html">Booking</a>
+              <a class="nav-item" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -116,21 +133,27 @@
         <a href="services.html" class="btn">View All Services</a>
       </section>
     </main>
-    <footer class="footer-header">
-      <h1>Ready to Transform Your Space?</h1>
-      <p>
-        Book a free consultation today and discover how we can help you achieve the clean, organized
-        space you've always wanted.
-      </p>
-      <a href="consultation.html" class="btn">Schedule Your Consultation</a>
-      <div class="global-footer">
-        <div>
-          <h3>SparkleSpace</h3>
-          <p>Professional cleaning and organization services for your home and office.</p>
+
+    <footer>
+      <div class="footer-header">
+        <h1 class="footer-heading">Ready to Transform Your Space?</h1>
+        <p class="footer-text">
+          Book a free consultation today and discover how we can help you achieve the clean,
+          organized space you've always wanted.
+        </p>
+        <a href="consultation.html" class="btn">Schedule Your Consultation</a>
+      </div>
+
+      <div class="footer-container">
+        <div class="footer-content">
+          <h3 class="footer-heading">SparkleSpace</h3>
+          <p class="footer-text">
+            Professional cleaning and organization services for your home and office.
+          </p>
         </div>
-        <div>
-          <h3>Quick Links</h3>
-          <ul>
+        <div class="footer-content">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-text">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
@@ -138,9 +161,9 @@
             <li><a href="contact.html">Conatct</a></li>
           </ul>
         </div>
-        <div>
-          <h3>Conatct</h3>
-          <p>
+        <div class="footer-content">
+          <h3 class="footer-heading">Conatct</h3>
+          <p class="footer-text">
             Email: hello@sparklespace.com <br />
             Phone: (555) 123-4567 <br />
             Mon-Fri: 8:00 AM - 6:00 PM <br />
@@ -148,5 +171,6 @@
         </div>
       </div>
     </footer>
+    <script src="src/script.js"></script>
   </body>
 </html>
