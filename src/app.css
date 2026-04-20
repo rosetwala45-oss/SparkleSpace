@@ -162,6 +162,8 @@ main section {
 
 /* ---BUTTONS--- */
 .btn {
+  display: inline-block;
+  border: 1px solid lightslategray;
 }
 
 /* ---CARDS--- */
