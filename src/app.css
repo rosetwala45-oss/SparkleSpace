@@ -23,6 +23,9 @@ Shade: #9b2226 (brown red)
 /* ------------------GLOBAL STYLING----------------------- */
 
 /* ---Variales--- */
+:root {
+  --text-color: oklch(44.6%, 0.043, 257.281);
+}
 
 * {
   padding: 0;
@@ -39,10 +42,13 @@ h1, h2, h3, h4, h5 {
   line-height: 1.2;
   color: #0E172B;
   text-transform: capitalize;
+  margin-bottom: 1.8rem;
 }
 
 p {
   color: #44556c;
+  line-height: 1.5rem;
+  font-size: 1rem;
 }
 a {
   text-decoration: none;
@@ -52,8 +58,19 @@ a {
 ul {
   list-style: none;
 }
+.heading-description {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
 
 /* ------------------SECTIONS--------------------- */
+.section-container {
+  margin: 2.5rem 0;
+}
+.sec-alt {
+  background-color: #f9fafc;
+}
 
 /* ---NAVBAR--- */
 .navbar {
@@ -70,6 +87,9 @@ ul {
   align-items: center;
   padding-right: 4rem;
 }
+.nav-container h2 {
+  margin-bottom: 0;
+}
 .nav-items-container {
   display: flex;
   gap: 1rem;
@@ -78,7 +98,7 @@ ul {
 
 .nav-item:hover,
 .nav-item:active {
-  color: #2d494f;
+  color: #19292d;
 }
 .navbar-side {
   display: none;
@@ -88,9 +108,9 @@ ul {
 
 .hero {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  background-color: #f9fafc;
+
   margin-top: 3rem;
   padding: 5rem 2rem;
 }
@@ -143,7 +163,8 @@ main section {
   padding: 50px 10px;
 }
 
-/* ---FOOTER--- */
+/* ------FOOTER------- */
+
 footer {
   min-width: 600px;
 }
@@ -155,10 +176,14 @@ footer {
 .footer-heading {
   color: white;
 }
+.footer-header .heading-description {
+  color: #cad5e2;
+}
 .footer-container {
   background-color: #0e172b;
   display: flex;
   justify-content: space-evenly;
+  gap: 2rem;
   padding: 5rem 2rem;
 }
 .footer-content {
@@ -167,6 +192,7 @@ footer {
 .footer-text {
   margin-bottom: 2rem;
   color: #cad5e2;
+  line-height: 2;
 }
 .footer-content a:hover {
   color: white;
@@ -177,7 +203,7 @@ footer {
 .btn {
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  border: 1px solid lightslategray;
+  border: 1px solid #cad5e2;
   transition: all 0.2s;
 }
 
@@ -190,6 +216,7 @@ footer {
 }
 
 /* ---CARDS--- */
+
 .cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -204,7 +231,7 @@ footer {
   overflow: hidden;
 }
 
-.index-service-section .card img {
+.section-container .card img {
   width: 100%;
   height: 300px;
 }
