@@ -66,7 +66,7 @@ ul {
 
 /* ------------------SECTIONS--------------------- */
 .section-container {
-  margin: 2.5rem 0;
+  padding: 2rem 0rem 2rem 0rem;
 }
 .sec-alt {
   background-color: #f9fafc;
@@ -201,6 +201,7 @@ footer {
 
 /* ---BUTTONS--- */
 .btn {
+  display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   border: 1px solid #cad5e2;
