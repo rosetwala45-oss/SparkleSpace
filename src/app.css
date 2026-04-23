@@ -138,30 +138,10 @@ ul {
 main section {
   text-align: center;
 }
-.detail-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px;
-}
-.detail-card {
-  text-align: left;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  margin: 15px;
-  width: 350px;
-  border-radius: 8px;
-}
-.detail-card img {
-  width: 40px;
-  border-radius: 8px;
-}
 
-.index-service-section {
-  background-color: #f9fafc;
-  width: 100%;
-  padding: 50px 10px;
-}
+
+
+
 
 /* ------FOOTER------- */
 
