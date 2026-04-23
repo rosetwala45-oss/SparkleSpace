@@ -14,17 +14,15 @@ TERTIARY
 Base: #ae2012 (oxidized iron)
 Tint: #bb3e03 (rusty spice)
 Shade: #9b2226 (brown red)
-
-
-
-
 */
 
-/* ------------------GLOBAL STYLING----------------------- */
+/*========================================================
+-------------------   GLOBAL ---------------------
+=========================================================== */
 
-/* ---Variales--- */
+/* --------------------- Variales ------------ */
 :root {
-  --text-color: oklch(44.6%, 0.043, 257.281);
+  --primary-color: #0e172b;
 }
 
 * {
@@ -42,7 +40,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.2;
   color: #0E172B;
   text-transform: capitalize;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.5rem;
 }
 
 p {
@@ -61,18 +59,27 @@ ul {
 .heading-description {
   font-size: 1.2rem;
   line-height: 1.8rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
-/* ------------------SECTIONS--------------------- */
+/*========================================================
+------------------- SECTIONS ---------------------
+=========================================================== */
 .section-container {
-  padding: 2rem 0rem 2rem 0rem;
+  padding: 3rem 0rem 3rem 0rem;
 }
 .sec-alt {
+  padding: 3rem 0rem 3rem 0rem;
   background-color: #f9fafc;
 }
+.sec-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 2rem;
+}
 
-/* ---NAVBAR--- */
+/* ------------------ NAVBAR --------------- */
 .navbar {
   width: 100%;
   position: fixed;
@@ -104,46 +111,65 @@ ul {
   display: none;
 }
 
-/* ---HERO---- */
+/* ------------------- HERO ---------------- */
 
 .hero {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   margin-top: 3rem;
   padding: 5rem 2rem;
 }
+
 .hero-text-container {
   width: 90%;
   text-align: left;
 }
+
 .hero-heading {
   font-weight: 620;
   font-size: 3rem;
 }
+
 .hero ul {
   display: flex;
   gap: 1rem;
   margin-top: 3rem;
 }
+
 .hero img {
   border-radius: 15px;
   width: 85%;
   box-shadow: 0 4px 6px rgba(0, 0, 0.15, 0.15);
 }
 
-/* ----MAIN---- */
+/* -------------------- MAIN --------------------- */
 
 main section {
   text-align: center;
 }
 
+/* HIGHLIGHT SECTION*/
+.highlight-section {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 6rem 1rem;
+}
+.highlight-section strong {
+  color: white;
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+.highlight-section small {
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+  color: #cad5e2;
+}
 
-
-
-
-/* ------FOOTER------- */
+/* -------------------- FOOTER ------------------ */
 
 footer {
   min-width: 600px;
@@ -177,9 +203,11 @@ footer {
 .footer-content a:hover {
   color: white;
 }
-/*------------------COMPONENTS------------------- */
+/*========================================================
+-------------------   COMPONENTS ---------------------
+=========================================================== */
 
-/* ---BUTTONS--- */
+/* ------------------------BUTTONS-------------------- */
 .btn {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -207,7 +235,7 @@ footer {
   background-color: #e1e4e8;
 }
 
-/* ---CARDS--- */
+/* -----------------------CARDS------------------- */
 
 .cards-container {
   display: flex;
