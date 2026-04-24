@@ -70,11 +70,13 @@ img {
 ------------------- SECTIONS ---------------------
 =========================================================== */
 .section-container {
-  padding: 3rem 0rem 3rem 0rem;
+  padding: 5rem 0rem 5rem 0rem;
+  text-align: center;
 }
 .sec-alt {
   padding: 3rem 0rem 3rem 0rem;
   background-color: #f9fafc;
+  text-align: center;
 }
 .sec-flex {
   display: flex;
@@ -154,11 +156,6 @@ img {
   border-radius: 15px;
   width: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0.15, 0.15);
-}
-
-.card-icon {
-  width: 50px;
-  border-radius: 10px;
 }
 
 /* --- HIGHLIGHT SECTION ---*/
@@ -253,15 +250,24 @@ footer {
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  padding: 0rem 1.5rem;
+  margin-top: 4rem;
 }
 
 .card {
-  width: 325px;
-  margin: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
+}
+
+.card-icon {
+  width: 50px;
+  border-radius: 10px;
 }
 
 .card-content {
