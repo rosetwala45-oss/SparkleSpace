@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="src/app.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <link rel="icon" href="images/logos-and-icons/favicon-32x32.png" type="image/png" />
+    <link rel="stylesheet" href="src/app.css" />
+    <title>Contact - SparkleSpace</title>
   </head>
   <body>
     <header>
@@ -18,13 +20,15 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Get in Touch</h1>
-        <p>
+      <!----------------------- HERO --------------------------->
+      <section class="sec-alt">
+        <h1 class="hero-heading">Get in Touch</h1>
+        <p class="heading-description">
           Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as
           possible.
         </p>
       </section>
+      <!----------------------- SECTION --------------------------->
       <section>
         <div class="cards-container">
           <div class="card">
@@ -64,33 +68,53 @@
             </p>
           </div>
         </div>
+        <div>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your.email@example.com" required />
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="What is this regarding?" />
+
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Tell us how we can help..."
+            ></textarea>
+          </form>
+          <div></div>
+        </div>
       </section>
-      <section>
+      <!----------------------- SECTION --------------------------->
+      <section class="sec-alt">
         <h1>Frequently Asked Questions</h1>
-        <p>Quick answers to common questions</p>
+        <p class="heading-description">Quick answers to common questions</p>
         <div class="cards-container">
-          <div>
+          <div class="card">
             <h4>Do I need to provide cleaning supplies?</h4>
             <p class="small-text">
               No, we bring all necessary cleaning supplies and equipment. However, if you prefer us
               to use specific products, we're happy to accommodate
             </p>
           </div>
-          <div>
+          <div class="card">
             <h4>Are your services insured?</h4>
             <p class="small-text">
               Yes, we are fully insured and bonded. All our staff members are background-checked and
               trained professionals.
             </p>
           </div>
-          <div>
+          <div class="card">
             <h4>How do I prepare for an organization session?</h4>
             <p class="small-text">
               We recommend having an idea of your goals, but our team will guide you through the
               entire process during your consultation.
             </p>
           </div>
-          <div>
+          <div class="card">
             <h4>What is your cancellation policy?</h4>
             <p class="small-text">
               We require 24 hours notice for cancellations. Cancellations with less notice may be
@@ -100,36 +124,7 @@
         </div>
       </section>
     </main>
-    <footer>
-      <section>
-        <h2>Need Immediate Assistance?</h2>
-        <p>For urgent matters or same-day service requests, please call us directly.</p>
-        <!-- Add conatct buttons -->
-      </section>
-      <div class="global-footer">
-        <div>
-          <h3>SparkleSpace</h3>
-          <p>Professional cleaning and organization services for your home and office.</p>
-        </div>
-        <div>
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="booking.html">Bookings</a></li>
-            <li><a href="contact.html">Conatct</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Conatct</h3>
-          <p>
-            Email: hello@sparklespace.com <br />
-            Phone: (555) 123-4567 <br />
-            Mon-Fri: 8:00 AM - 6:00 PM <br />
-          </p>
-        </div>
-      </div>
-    </footer>
+    <!----------------------- SECTION --------------------------->
+    <footer></footer>
   </body>
 </html>
