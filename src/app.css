@@ -56,6 +56,10 @@ a {
 ul {
   list-style: none;
 }
+img {
+  border-radius: 15px;
+}
+
 .heading-description {
   font-size: 1.2rem;
   line-height: 1.8rem;
@@ -76,7 +80,8 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5rem 2rem;
+  padding: 5rem 8rem;
+  gap: 1.5rem;
 }
 
 /* ------------------ NAVBAR --------------- */
@@ -145,11 +150,19 @@ ul {
 
 /* -------------------- MAIN --------------------- */
 
-main section {
-  text-align: center;
+.flex-child-image {
+  border-radius: 15px;
+  width: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0.15, 0.15);
 }
 
-/* HIGHLIGHT SECTION*/
+.card-icon {
+  width: 50px;
+  border-radius: 10px;
+}
+
+/* --- HIGHLIGHT SECTION ---*/
+
 .highlight-section {
   background-color: var(--primary-color);
   display: flex;
@@ -251,10 +264,10 @@ footer {
   overflow: hidden;
 }
 
-.section-container .card img {
-  width: 100%;
-  height: 300px;
-}
 .card-content {
   padding: 20px;
+}
+
+.text-card {
+  text-align: left;
 }
