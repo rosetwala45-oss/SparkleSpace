@@ -74,7 +74,7 @@ img {
   text-align: center;
 }
 .sec-alt {
-  padding: 3rem 0rem 3rem 0rem;
+  padding: 5rem 0rem 5rem 0rem;
   background-color: #f9fafc;
   text-align: center;
 }
@@ -252,13 +252,13 @@ footer {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 1.5rem;
-  padding: 0rem 1.5rem;
-  margin-top: 4rem;
+  padding: 2rem 8rem;
+  margin-top: 2rem;
 }
 
 .card {
   border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   padding: 1rem;
   flex-grow: 1;
   flex-shrink: 1;
@@ -270,8 +270,20 @@ footer {
   border-radius: 10px;
 }
 
+.image-card {
+  padding: 0;
+  max-width: 25rem;
+}
+.card-image {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
 .card-content {
-  padding: 20px;
+  padding: 3rem 1rem;
+  text-align: left;
 }
 
 .text-card {
