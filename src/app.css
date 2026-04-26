@@ -157,6 +157,7 @@ img {
   width: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0.15, 0.15);
 }
+/* Cards that need text left aluign */
 
 /* --- HIGHLIGHT SECTION ---*/
 
@@ -309,10 +310,25 @@ input {
   padding: 1.5rem;
 }
 
+.card-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin: 1rem 0 1rem 0;
+  text-align: left;
+}
+
 .card-list li::before {
-  content: url(/images/logos-and-icons/check-mark.svg);
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  mask-size: contain;
+  content: " ";
+  background-image: url(/images/logos-and-icons/check-mark.svg);
+  background-size: 1rem 1rem;
+  background-image: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0.125rem;
+
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
 }
