@@ -117,22 +117,27 @@ img {
 .navbar-side {
   display: none;
 }
-
+@media (max-width: 768px) {
+  .navbar {
+    z-index: 999;
+  }
+}
 /* ------------------- HERO ---------------- */
 
 .hero {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
   padding: 5rem 2rem;
 }
 
+/* ---Text section---- */
 .hero-text-container {
-  width: 90%;
+  flex: 1;
+  min-width: 50%;
   text-align: left;
 }
-
 .hero-heading {
   font-weight: 620;
   font-size: 3rem;
@@ -144,20 +149,44 @@ img {
   margin-top: 3rem;
 }
 
+/* ---Picture section div--- */
+.hero div {
+  flex: 1;
+  min-width: 50%;
+  transition:
+    transform 1s ease,
+    opacity 0.3s ease;
+}
+
 .hero img {
   border-radius: 15px;
-  width: 85%;
+  width: 100%;
   box-shadow: 0 4px 6px rgba(0, 0, 0.15, 0.15);
+}
+
+/* Hero Responsiveness--- */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-text-container {
+    width: 100%;
+    order: 1;
+    transform: translateY(-10px);
+  }
+  .hero ul {
+    margin-bottom: 5rem;
+  }
+  .hero div {
+    width: 100%;
+    order: 2;
+    transform: translateY(10px);
+  }
 }
 
 /* -------------------- MAIN --------------------- */
 
-.flex-child-image {
-  border-radius: 15px;
-  width: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0.15, 0.15);
-}
-/* Cards that need text left aluign */
+/* Cards that need text left align */
 
 /* --- HIGHLIGHT SECTION ---*/
 
