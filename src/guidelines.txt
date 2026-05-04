@@ -1,0 +1,34 @@
+/* -------MEDIA QUERY------ */
+
+CSS STANDARD BREAKPOINTS:
+/* Mobile Phones (portrait & landscape) */
+@media (max-width: 640px) {
+  /* Small to medium phones */
+}
+
+/* Tablets (portrait) */
+@media (min-width: 641px) and (max-width: 768px) {
+  /* iPads, Galaxy Tabs in portrait */
+}
+
+/* Tablets (landscape) & Small Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Landscape tablets, Chromebooks, small laptops */
+}
+
+/* Desktops & Laptops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Standard desktop screens */
+}
+
+/* Large Desktops / High-res Displays */
+@media (min-width: 1281px) {
+  /* Wide screens, 4K displays */
+}
+
+CARDS:
+- Using a differnt set of css for odd and even number cards.
+- breakpoints between mobile size and tablet size included
+- Odd: go straight to colum, on beneath the other at tablet point
+- Even: at tablet breakpoint -> go to display: grid, 1fr 1fr (sizing)
+        mobile breakpoint   -> go to colum display with each item filling width
