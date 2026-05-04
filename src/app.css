@@ -361,3 +361,12 @@ input {
   height: 1.5rem;
   margin-right: 0.5rem;
 }
+@media (min-width: 768px) {
+  .cards-container {
+    flex-wrap: nowrap;
+    padding: 2rem 4rem;
+  }
+  .card {
+    width: 100%;
+  }
+}
