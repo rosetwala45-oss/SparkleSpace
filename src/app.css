@@ -82,8 +82,27 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5rem 8rem;
+  align-items: center;
+  padding: 5rem 5rem;
   gap: 1.5rem;
+}
+.sec-flex img {
+  object-fit: cover;
+}
+
+.text-left {
+  text-align: left;
+}
+.flex-item {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .sec-flex {
+    display: grid;
+  }
+  .flex-item {
+    width: 100%;
+  }
 }
 
 /* ------------------ NAVBAR --------------- */
@@ -193,6 +212,8 @@ img {
 
 /* Cards that need text left align */
 
+/* ---OUR STORY--- */
+
 /* --- HIGHLIGHT SECTION ---*/
 
 .highlight-section {
@@ -200,7 +221,7 @@ img {
   display: flex;
   justify-content: space-around;
   color: white;
-  padding: 6rem 1rem;
+  padding: 5rem 1rem;
 }
 .highlight-section strong {
   color: white;
@@ -212,6 +233,17 @@ img {
   font-size: 1.1rem;
   margin-top: 0.8rem;
   color: #cad5e2;
+}
+@media (max-width: 676px) {
+  .highlight-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+  .highlight-section strong {
+    font-size: 2.5rem;
+  }
 }
 
 /* -------------------- FOOTER ------------------ */
@@ -311,7 +343,7 @@ input {
 .card {
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  padding: 1rem;
+  padding: 2rem;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 15rem;

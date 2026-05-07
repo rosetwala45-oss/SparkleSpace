@@ -1,27 +1,27 @@
 /* -------MEDIA QUERY------ */
 
 CSS STANDARD BREAKPOINTS:
-/* Mobile Phones (portrait & landscape) */
+---/* Mobile Phones (portrait & landscape) */
 @media (max-width: 640px) {
   /* Small to medium phones */
 }
 
-/* Tablets (portrait) */
+---/* Tablets (portrait) */
 @media (min-width: 641px) and (max-width: 768px) {
   /* iPads, Galaxy Tabs in portrait */
 }
 
-/* Tablets (landscape) & Small Laptops */
+---/* Tablets (landscape) & Small Laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
   /* Landscape tablets, Chromebooks, small laptops */
 }
 
-/* Desktops & Laptops */
+---/* Desktops & Laptops */
 @media (min-width: 1025px) and (max-width: 1280px) {
   /* Standard desktop screens */
 }
 
-/* Large Desktops / High-res Displays */
+---/* Large Desktops / High-res Displays */
 @media (min-width: 1281px) {
   /* Wide screens, 4K displays */
 }
