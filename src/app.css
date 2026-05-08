@@ -301,6 +301,11 @@ label {
 input {
   width: 90%;
 }
+.text-area {
+  width: 90%;
+  padding: 1rem;
+  font-size: 1rem;
+}
 
 /* ------------------------BUTTONS-------------------- */
 .btn {
